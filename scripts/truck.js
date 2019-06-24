@@ -14,7 +14,6 @@
         console.log('Delivering order for ' + customerId);
         this.db.remove(customerId);
     };
-
     Truck.prototype.printOrders = function () {
         var customerIdArray = Object.keys(this.db.getAll());
         console.log('Truck #' + this.truckId + ' has pending orders:');
